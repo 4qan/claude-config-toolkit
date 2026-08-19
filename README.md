@@ -1,10 +1,10 @@
 # Claude Config Toolkit
 
-Three diagnostic slash commands for keeping a [Claude Code](https://docs.claude.com/en/docs/claude-code) configuration **coherent, correct, and cheap** as it grows.
+Three diagnostic slash commands for keeping a [Claude Code](https://docs.claude.com/en/docs/claude-code) configuration consistent, correct, and cheap to run as it grows.
 
 A serious Claude Code setup accumulates fast: a global `CLAUDE.md`, per-project instructions, dozens of commands and skills, reference files, memory, hooks. Left alone, that surface drifts. Rules get restated in three places and quietly disagree. A reference points at a file that moved. The same preference keeps getting "fixed" and keeps coming back. Auto-loaded files balloon and every session pays for content it never uses.
 
-These three commands treat config as a system with a maintenance discipline, not a pile of markdown.
+These three commands treat config as a system to maintain, not a pile of markdown.
 
 | Command | Question it answers | When to run |
 |---|---|---|
@@ -29,7 +29,7 @@ All three commands share this model, so their fixes are stated as *level changes
 ## The commands
 
 ### `/reflect`
-Diagnostic reflection on a session. Extracts the reusable learnings, checks whether each one has already been "fixed" before, and for anything recurring, traces the signal path to find the real drop point and escalates the fix one level. Refuses same-level re-adds. Not a note-taker: a mechanic.
+Diagnostic reflection on a session. Extracts the reusable learnings, checks whether each one has already been "fixed" before, and for anything recurring, traces the signal path to find the real drop point and escalates the fix one level. Refuses same-level re-adds. It diagnoses where the preference failed instead of just recording it.
 
 ### `/audit-config`
 A three-phase structural audit (scope to audit to apply) of a target you choose: your global config, a project, a single command, or one file. Runs seven checks: inventory, duplication, conflict, scope leak, role boundary, dead reference, orphan. Produces a severity-ranked report of findings, each with evidence and a proposed fix. Applies nothing until you approve it, one file at a time, with a residual scan that catches stale echo-sites a rewrite left behind.
