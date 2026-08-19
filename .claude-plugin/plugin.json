@@ -1,0 +1,9 @@
+{
+  "name": "claude-config-toolkit",
+  "description": "Three diagnostic slash commands for keeping a Claude Code configuration coherent, correct, and cheap: /reflect, /audit-config, /audit-tokens.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Furqan Tariq"
+  },
+  "keywords": ["claude-code", "config", "audit", "diagnostics", "tokens", "hygiene"]
+}
